@@ -7,8 +7,15 @@
     <title>Indifferent Society</title>
 
     <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!--Fonts courtesy of Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Molle&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
 
     <!--Icons courtesy of Font Awesome-->
     <script src="https://kit.fontawesome.com/6c0b0afc60.js" crossorigin="anonymous"></script>
@@ -17,26 +24,40 @@
     <!--Navigation-->
     <nav>
         <ul class="topbar">
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="about.html">About</a></li>
-            <li> <a href="index.html"><img src="images/ISlogo.png"></a></li>
-            <li> <a href="calendar.html">Upcoming Shows</a></li>
-            <li> <a href="contact.html">Contact Us</a></li>
+            <li> <a href="index.html" class="nav-item">Home</a></li>
+            <li> <a href="about.html" class="nav-item">About Us</a></li>
+            <li> <a href="index.html"><img src="images/ISlogo.jpeg"></a></li>
+            <li> <a href="calendar.html" class="nav-item">Calendar</a></li>
+            <li> <a href="contact.html" class="nav-item">Contact Us</a></li>
         </ul>
     </nav>
 
-    <!--Contact picture section-->
-    <div class="img-bg">
-        <h1>Contact us!</h1>
-        <p>Have a question? Want to book us for a show? Want to tell us about your cat? Send us a message below!</p>
-    </div>
+    <div class="container">
+        <!--Contact picture section-->
+        <div class="img-bg contact-hero">
+            <h1>Contact us!</h1>
+            <h3>We'd love to hear from you-- get in touch!</h3>
+        </div>
 
-    <!--Calendar-->
-    <div class="form">
-        <!--TODO add form stuff-->
-        <p>Add form! </p>
-    </div>
+        <div class="section light-section">
+            <h2>Send us an email</h2>
+            <p>Have a question? Want to book us for a show? Want to tell us about your cat? Let us know! &darr;</p>
+            <h4 id="email">indifferentsociety101@gmail.com</h4>
+        </div>
 
+        <div class="section flex-section dark-section">
+            <div>
+                <img src="images/followus.png" alt="band instagram">
+            </div>
+
+            <div>
+                <h2>Social Media</h2>
+                <p>Follow our instagram to see what we're up to!</p>
+                <a href="https://www.instagram.com/indifferentsociety/"><i class="fa-brands fa-instagram" id="contact-ig"></i></a>
+            </div>
+
+        </div>
+    </div>
     <!--Footer -->
     <footer>
         <div class="socials">
@@ -45,7 +66,7 @@
         </div>
         <div class="footer-contact">
             <h4>Want to book us (or just ask a question)?</h4>
-            <a class="button" href="contact.html">Contact us!</a>
+            <a href="contact.html">Contact us!</a>
         </div>
     </footer>
 </body>

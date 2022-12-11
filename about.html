@@ -7,8 +7,21 @@
     <title>Indifferent Society</title>
 
     <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!--Carousel courtesy of Owl Carousel-->
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
+
+
+    
+    <!--Fonts courtesy of Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Molle&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!--Icons courtesy of Font Awesome-->
     <script src="https://kit.fontawesome.com/6c0b0afc60.js" crossorigin="anonymous"></script>
@@ -17,39 +30,68 @@
     <!--Navigation-->
     <nav>
         <ul class="topbar">
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="about.html">About</a></li>
-            <li> <a href="index.html"><img src="images/ISlogo.png"></a></li>
-            <li> <a href="calendar.html">Upcoming Shows</a></li>
-            <li> <a href="contact.html">Contact Us</a></li>
+            <li> <a href="index.html" class="nav-item">Home</a></li>
+            <li> <a href="about.html" class="nav-item">About Us</a></li>
+            <li> <a href="index.html"><img src="images/ISlogo.jpeg"></a></li>
+            <li> <a href="calendar.html" class="nav-item">Calendar</a></li>
+            <li> <a href="contact.html" class="nav-item">Contact Us</a></li>
         </ul>
     </nav>
+    <div class="container">
+        <!--Main picture section-->
+        <div class="img-bg about-hero">
+            <h1>What is Indifferent Society, anyway?</h1>
+            <h2>Glad you asked :)</h2>
+            <p id="about-para">
+                We're a relatively new outfit with a passion for live music and a love for our town's unique artistic culture.<br>
+                We believe that Bloomington is home to some of the most fun and talented musicians around and are honored to be a part of the local scene.<br>
+                Our group comes from all different backgrounds and our inspirations vary even more. We hope to reflect this in our style and in our music.<br>
+                Above all else, we want to make people dance, have fun, and enjoy themselves.<br>
+                <span id="be-here-now">It's great to be here now.</span> &hearts;
+            </p>
+        </div>
 
-    <!--Main picture section-->
-    <div class="img-bg">
-        <h1>What is Indifferent Society, anyway?</h1>
-        <h2>Glad you asked :)</h2>
-            We're a relatively new outfit with a passion for live music and a love for our town's unique artistic culture.<br>
-            We believe that Bloomington is home to some of the most fun and talented musicians around and are honored to be a part of the local scene.<br>
-            Our group comes from all different backgrounds and our inspirations vary even more. We hope to reflect this in our style and in our music.<br>
-            Above all else, we want to make people dance, have fun, and enjoy themselves.<br>
-            <span class="be-here-now">It's great to be here now.</span> &hearts;
-        </p>
+        <!--Owl Carousel-->
+        <div class="section carousel">
+            <h2>Meet The Band!</h2>
+            <p>(Click on a member to learn more)</p>
+            
+            
+            <div class="owl-carousel owl-theme">
+                <figure>
+                    <img src="images/C-aaliyah.jpeg" alt="aaliyah">
+                    <figcaption>Aaliyah</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/C-emery.jpeg" alt="emery">
+                    <figcaption>Emery</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/C-jarret.jpeg" alt="jarret">
+                    <figcaption>Jarret</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/C-nomsa.jpeg" alt="nomsa">
+                    <figcaption>Nomsa</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/C-Puffin.jpeg" alt="puffin">
+                    <figcaption>Puffin</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/C-quinn.png" alt="quinn">
+                    <figcaption>Quinn</figcaption>
+                </figure>
+            </div>
+
+        <!--Biography section-->
+        <div class="biography section">
+            <!--TODO figure out how to make it change to show bios lol-->
+            <p>bios go here</p>
+        </div>
     </div>
 
-    <!--Owl Carousel-->
-    <div class="section">
-        <h2>Meet The Band!</h2>
-        <!--TODO add owl carousel-->
-        <p>Owl Carousel goes here :p</p>
     </div>
-
-    <!--Biography section-->
-    <div class="biography section">
-        <!--TODO figure out how to make it change to show bios lol-->
-        <p>bios go here</p>
-    </div>
-
     <!--Footer -->
     <footer>
         <div class="socials">
@@ -58,8 +100,40 @@
         </div>
         <div class="footer-contact">
             <h4>Want to book us (or just ask a question)?</h4>
-            <a class="button" href="contact.html">Contact us!</a>
+            <a href="contact.html">Contact us!</a>
         </div>
     </footer>
+
+
+
+    <!--owl carousel scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="plugins/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+            margin:30,
+            items:3,
+            stagePadding:true,
+            nav:false,
+            center:true,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:3,
+                },
+                1000:{
+                    items:5,
+                    loop:false
+                }
+            }
+        })
+          });
+    
+    </script>
 </body>
 </html>

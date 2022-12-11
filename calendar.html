@@ -7,8 +7,14 @@
     <title>Indifferent Society</title>
 
     <!--Stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <!--Fonts courtesy of Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Molle&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!--Icons courtesy of Font Awesome-->
     <script src="https://kit.fontawesome.com/6c0b0afc60.js" crossorigin="anonymous"></script>
@@ -17,24 +23,30 @@
     <!--Navigation-->
     <nav>
         <ul class="topbar">
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="about.html">About</a></li>
-            <li> <a href="index.html"><img src="images/ISlogo.png"></a></li>
-            <li> <a href="calendar.html">Upcoming Shows</a></li>
-            <li> <a href="contact.html">Contact Us</a></li>
+            <li> <a href="index.html" class="nav-item">Home</a></li>
+            <li> <a href="about.html" class="nav-item">About Us</a></li>
+            <li> <a href="index.html"><img src="images/ISlogo.jpeg"></a></li>
+            <li> <a href="calendar.html" class="nav-item">Calendar</a></li>
+            <li> <a href="contact.html" class="nav-item">Contact Us</a></li>
         </ul>
     </nav>
 
-    <!--Calendar picture section-->
-    <div class="img-bg">
-        <h1>Upcoming Events</h1>
-        <h3>&darr; All upcoming show dates will be posted in the calendar below &darr;</h3>
-    </div>
+    <div class="container">
+        <!--Calendar picture section-->
+        <div class="img-bg calendar-hero">
+            <h1>Upcoming Events</h1>
+            <h3>&darr; All upcoming show dates will be posted in the calendar below &darr;</h3>
+            <!-- TRY ADDING IMAGE HERE INSTEAD OF BACKGROUND -->
+        </div>
 
-    <!--Calendar-->
-    <div class="calendar">
-        <!--TODO add calendar-->
-        <p>Add calendar here :)</p>
+        <!--Calendar-->
+        <div class="section calendar-section">
+            <div class="calendar">
+                <!--TODO add calendar-->
+                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23B39DDB&ctz=America%2FIndiana%2FIndianapolis&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src=aW5kaWZmZXJlbnRzb2NpZXR5MTAxQGdtYWlsLmNvbQ&color=%23039BE5" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" class="calendar"></iframe>
+            </div>
+        </div>
+    
     </div>
 
     <!--Footer -->
@@ -45,7 +57,7 @@
         </div>
         <div class="footer-contact">
             <h4>Want to book us (or just ask a question)?</h4>
-            <a class="button" href="contact.html">Contact us!</a>
+            <a href="contact.html">Contact us!</a>
         </div>
     </footer>
 </body>
