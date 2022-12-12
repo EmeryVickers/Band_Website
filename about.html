@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
+    <!--Sidenav-->
+    <!--In class resource- thank you Erika :)-->
+    <link rel = "stylesheet" href="plugins/sidenav/css/styles.css">
+
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -37,26 +41,47 @@
             <li> <a href="contact.html" class="nav-item">Contact Us</a></li>
         </ul>
     </nav>
+
+    <!--Mobile Navigation -->
+    <!--Please note: I'm using a div tag because I already coded a bunch of CSS for the normal nav above
+    and don't want the rules to affect this one :) -->
+    <div id="mySidenav" class="sidenav">
+        <ul>
+            <li><a class="closebtn">&times;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!--Opens sidenav-->
+    <div class="openbtn">
+        <i class="fas fa-bars fa-2x"></i>
+        <span class="menu-text">menu</span>
+    </div>
+
     <div class="container">
         <!--Main picture section-->
         <div class="img-bg about-hero">
             <h1>What is Indifferent Society, anyway?</h1>
             <h2>Glad you asked :)</h2>
-            <p id="about-para">
-                We're a relatively new outfit with a passion for live music and a love for our town's unique artistic culture.<br>
-                We believe that Bloomington is home to some of the most fun and talented musicians around and are honored to be a part of the local scene.<br>
-                Our group comes from all different backgrounds and our inspirations vary even more. We hope to reflect this in our style and in our music.<br>
-                Above all else, we want to make people dance, have fun, and enjoy themselves.<br>
-                <span id="be-here-now">It's great to be here now.</span> &hearts;
-            </p>
+            <div id="about-para">
+
+                <p>We're a relatively new outfit with a passion for live music and a love for our town's unique artistic culture.</p>
+                <p>We believe that Bloomington is home to some of the most fun and talented musicians around and are honored to be a part of the local scene.</p>
+                <p>Our group comes from all different backgrounds and our inspirations vary even more. We hope to reflect this in our style and in our music.</p>
+                <p>Above all else, we want to make people dance, feel good, and enjoy themselves.</p>
+                <p id="heart">&hearts;</p>
+            </div>
         </div>
 
-        <!--Owl Carousel-->
+        <!--Carousel courtesy of Owl Carousel-->
         <div class="section carousel">
             <h2>Meet The Band!</h2>
             <p>(Click on a member to learn more)</p>
             
-            
+
             <div class="owl-carousel owl-theme">
                 <figure>
                     <img src="images/C-aaliyah.jpeg" alt="aaliyah">
@@ -79,7 +104,7 @@
                     <figcaption>Puffin</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/C-quinn.png" alt="quinn">
+                    <img src="images/C-quinn.jpeg" alt="quinn">
                     <figcaption>Quinn</figcaption>
                 </figure>
             </div>
@@ -94,13 +119,13 @@
     </div>
     <!--Footer -->
     <footer>
-        <div class="socials">
-            <h4>Follow us!</h4>
-            <a href="https://www.instagram.com/indifferentsociety/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
         <div class="footer-contact">
             <h4>Want to book us (or just ask a question)?</h4>
             <a href="contact.html">Contact us!</a>
+        </div>
+        <div class="socials">
+            <h4>Follow us!</h4>
+            <a href="https://www.instagram.com/indifferentsociety/"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
 
@@ -135,5 +160,8 @@
           });
     
     </script>
+
+    <!--Mobile Nav Script-->
+    <script src="plugins/sidenav/js/nav.js"></script>
 </body>
 </html>

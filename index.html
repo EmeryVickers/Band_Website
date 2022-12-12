@@ -10,7 +10,14 @@
     <!--Textures courtesy of transparenttextures.com, lovely website :)-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/normalize.css">
+
+    <!--Sidenav-->
+    <!--In class resource- thank you Erika :)-->
+    <link rel = "stylesheet" href="plugins/sidenav/css/styles.css">
+
     <link rel="stylesheet" href="css/styles.css">
+
+
 
     <!--Fonts courtesy of Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +39,25 @@
         </ul>
     </nav>
 
+    <!--Mobile Navigation -->
+    <!--Please note: I'm using a div tag because I already coded a bunch of CSS for the normal nav above
+    and don't want the rules to affect this one :) -->
+        <div id="mySidenav" class="sidenav">
+            <ul>
+                <li><a class="closebtn">&times;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    <!--Opens sidenav-->
+    <div class="openbtn">
+        <i class="fas fa-bars fa-2x"></i>
+        <span class="menu-text">menu</span>
+    </div>
+
     
     <div class="container">
         <!--Hero Section-->
@@ -52,14 +78,14 @@
                     <a class="button" href="about.html">More on this &rarr;</a>
                 </div>
                 <div>
-                    <img src="images/ISlogo.jpeg" class="index-logo">
+                    <img src="images/ISlogo.jpeg" class="index-logo" alt="indifferent society logo">
                 </div>
         </div>
 
 
         <div class="section flex-section">
             <div>
-                <img src="images/guitar.jpeg" class="rounded-img">
+                <img src="images/guitar.jpeg" class="rounded-img" alt="closeup of emery's guitar">
             </div>
             <div class="text-box">
                 <h2>Catch us at our next show!</h2>
@@ -72,14 +98,18 @@
 
     <!--Footer -->
     <footer>
-        <div class="socials">
-            <h4>Follow us!</h4>
-            <a href="https://www.instagram.com/indifferentsociety/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
         <div class="footer-contact">
             <h4>Want to book us (or just ask a question)?</h4>
             <a href="contact.html">Contact us!</a>
         </div>
+        <div class="socials">
+            <h4>Follow us!</h4>
+            <a href="https://www.instagram.com/indifferentsociety/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
     </footer>
+
+    <!--Mobile Nav Script-->
+    <script src="plugins/sidenav/js/nav.js"></script>
 </body>
 </html>
